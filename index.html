@@ -51,6 +51,14 @@ p {
   cursor: pointer;
   transition: 0.3s;
 }
+.card.chosen {
+  border-color: #e75480 !important;
+  box-shadow: 0 0 20px 5px rgba(231, 84, 128, 0.7);
+  transform: scale(1.05);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  z-index: 2;
+  position: relative;
+}
 
 .card:hover {
   transform: translateY(-5px);
@@ -245,6 +253,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
+
 
 
 
